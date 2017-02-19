@@ -37,24 +37,21 @@ namespace Garage2._5.Models
         [DisplayName("Number of Wheels")]
         public int Wheels { get; set; }
 
+        public bool IsDeleted { get; set; } = false;
 
+
+        // Foreign Keys
         public int MemberId { get; set; }
 
         public int VehicleTypeId { get; set; }
 
 
 
+        /// navigation Property
 
+        public virtual Member Members { get; set; }
+        public virtual VehicleType VehicleTypes { get; set; }
 
-
-        ////[DisplayName("In-checkningstid")]
-        //public DateTime Tid { get; set; }
-
-        //public int MedlemsId { get; set; }
-        //public int FordonstypId { get; set; }
-
-        ////Navigation property
-        //public virtual Fordonstyp Fordonstyper { get; set; }
-        //public virtual Medlem Medlemmar { get; set; }
+        
     }
 }

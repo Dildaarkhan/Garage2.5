@@ -12,6 +12,6 @@ namespace Garage2._5.Models
        
         // Navigation Property
 
-        public virtual Vehicle Vehicles { get; set; }
+        public virtual ICollection<Vehicle> Vehicles { get; set; }
     }
 }

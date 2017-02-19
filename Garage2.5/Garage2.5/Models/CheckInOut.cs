@@ -12,5 +12,9 @@ namespace Garage2._5.Models
         public DateTime CheckOut { get; set; }
         public int Price { get; set; }
 
+        // navigation property
+
+        public virtual ICollection<Vehicle> Vehicles { get; set; }
+
     }
 }
