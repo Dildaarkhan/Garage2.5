@@ -1,0 +1,60 @@
+﻿body {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background-color: #d8f3d8;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.navbar{
+    background-color:seagreen;
+    height:70px;
+}
+.navbar-inverse .navbar-brand{
+    
+    font-family: 'Monoton', cursive;
+    font-size:40px;
+    color:white;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color:black;
+}
+.navbar-nav{
+    float:right;
+}
+.navbar-form .form-control{
+
+    background-color:lightgreen;
+}
+.body-text{
+
+    padding-top:20px;
+}
+.main-image{
+    padding-top:50px;
+}
+.container-fluid>div>img{
+    height:200px;
+    width:100%;
+}
+.imgLink
+{
+  background: url(~/images/parking.gif) no-repeat;
+}
