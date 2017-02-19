@@ -51,3 +51,10 @@ C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\
 C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\obj\Debug\Garage2.5.csprojResolveAssemblyReference.cache
 C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\obj\Debug\Garage2.5.dll
 C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\obj\Debug\Garage2.5.pdb
+C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\bin\EntityFramework.dll
+C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\bin\EntityFramework.SqlServer.dll
+C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\bin\EntityFramework.xml
+C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\bin\EntityFramework.SqlServer.xml
+C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\obj\Debug\Garage2._5.Migrations.InitialCreate.resources
+C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\obj\Debug\Garage2.5.csproj.GenerateResource.Cache
+C:\Users\NaxNordic AB\Documents\Visual Studio 2015\Projects\Garage2.5\Garage2.5\Garage2.5\obj\Debug\Garage2._5.Migrations.init.resources
