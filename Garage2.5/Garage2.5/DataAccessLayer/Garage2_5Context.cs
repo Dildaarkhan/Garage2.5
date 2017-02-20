@@ -25,6 +25,6 @@ namespace Garage2._5.DataAccessLayer
 
         public System.Data.Entity.DbSet<Garage2._5.Models.Vehicle> Vehicles { get; set; }
 
-        public  DbSet<Garage2._5.Models.CheckInOut> CheckInOuts { get; set; }
+        
     }
 }

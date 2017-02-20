@@ -37,8 +37,10 @@ namespace Garage2._5.Models
         [DisplayName("Number of Wheels")]
         public int Wheels { get; set; }
 
-
-        public bool IsDeleted { get; set; }
+        public DateTime CheckIn { get; set; }    
+        
+           
+       
 
 
         // Foreign Keys

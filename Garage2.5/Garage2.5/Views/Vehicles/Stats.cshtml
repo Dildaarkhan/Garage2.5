@@ -1,0 +1,102 @@
+﻿@model Garage2._5.Models.Vehicle
+
+
+@{
+    ViewBag.Title = "Statistics";
+}
+
+<h2>Fordonsstatistik</h2>
+
+<div>
+    <hr />
+    <table class="table">
+        <tr>
+            <th>
+                Total Number of Cars
+            </th>
+            <th>
+                Total Number of Buss
+            </th>
+            <th>
+                Totalt Number of MotorCycle
+            </th>
+            <th>
+                Total Number of Boats
+            </th>
+            <th>
+                Total Number of AirPlane
+            </th>
+            <th>
+                Total Number of Vehicles
+            </th>
+        </tr>
+
+
+        <tr>
+            <td>
+                @ViewBag.car
+            </td>
+            <td>
+                @ViewBag.bus
+            </td>
+            <td>
+                @ViewBag.motorcycle
+            </td>
+            <td>
+                @ViewBag.boat
+            </td>
+
+            <td>
+                @ViewBag.airplane
+            </td>
+            <td>
+                @ViewBag.TotalVehicles
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<div>
+    <hr />
+    <table>
+        <tr>
+            <th>
+                Totalt Number of Wheels in Garage
+            </th>
+
+        </tr>
+        <tr>
+            <td>
+                @ViewBag.TotalHjul
+            </td>
+
+        </tr>
+        <tr>
+            <th>
+                Totalt Parked Minutes
+            </th>
+        </tr>
+        <tr>
+
+            <td>
+                @ViewBag.TotalTid
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Total Price
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @ViewBag.count SEK
+            </td>
+        </tr>
+    </table>
+
+</div>
+<hr />
+<div>
+    @Html.ActionLink("Go", "Index")
+</div>
