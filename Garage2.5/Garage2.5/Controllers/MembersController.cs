@@ -16,8 +16,18 @@ namespace Garage2._5.Controllers
         private Garage2_5Context db = new Garage2_5Context();
 
         // GET: Members
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
+            IQueryable<Member> member = db.Members;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                member = member.Where(s => s.Name.Contains(searchString)
+                                        || s.Email.Contains(searchString)
+                                        || s.Address.Contains(searchString)
+                                        || s.Telephone.Contains(searchString)
+                                        );
+                return View(member);
+            }
             return View(db.Members.ToList());
         }
 

@@ -49,11 +49,13 @@ namespace Garage2._5.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Type")] VehicleType vehicleType)
         {
+
             if (ModelState.IsValid)
             {
                 db.VehicleTypes.Add(vehicleType);
                 db.SaveChanges();
                 return RedirectToAction("Index");
+
             }
 
             return View(vehicleType);
@@ -110,9 +112,11 @@ namespace Garage2._5.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+
             VehicleType vehicleType = db.VehicleTypes.Find(id);
             db.VehicleTypes.Remove(vehicleType);
             db.SaveChanges();
+
             return RedirectToAction("Index");
         }
 

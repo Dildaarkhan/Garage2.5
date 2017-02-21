@@ -24,8 +24,7 @@ namespace Garage2._5.Controllers
             ViewBag.TypSortParm = sortOrder == "Typ" ? "Typ_desc" : "Typ";
             ViewBag.FärgSortParm = sortOrder == "Färg" ? "Färg_desc" : "Färg";
             ViewBag.TidSortParm = sortOrder == "Tid" ? "Tid_desc" : "Tid";
-            /*var fordon = from f in db.Fordons
-                           select f;*/
+            
             IQueryable<Vehicle> fordon = db.Vehicles;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -135,14 +134,14 @@ namespace Garage2._5.Controllers
                     return RedirectToAction("Index");
                 }
 
-                ViewBag.MemberId = new SelectList(db.Members, "Id", "Name", vehicle.MemberId);
-                ViewBag.VehicleTypeId = new SelectList(db.VehicleTypes, "Id", "Type", vehicle.VehicleTypeId);
             }
             else
             {
-                ViewBag.error = "Registreringsnumret finns redan i garaget!";
+                ViewBag.error = "Registration Already Exist!";
             }
 
+                ViewBag.MemberId = new SelectList(db.Members, "Id", "Name", vehicle.MemberId);
+                ViewBag.VehicleTypeId = new SelectList(db.VehicleTypes, "Id", "Type", vehicle.VehicleTypeId);
                 return View(vehicle);
         }
 
@@ -169,7 +168,8 @@ namespace Garage2._5.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,RegistrationNumber,Color,Make,Model,Wheels,MemberId,VehicleTypeId")] Vehicle vehicle)
-        {
+        {   
+
             if (ModelState.IsValid)
             {
                 db.Entry(vehicle).State = EntityState.Modified;
